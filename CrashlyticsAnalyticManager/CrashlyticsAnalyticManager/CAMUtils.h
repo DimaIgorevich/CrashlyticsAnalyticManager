@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CAMConstants.h>
+#import "CAMConstants.h"
 
 @interface CAMUtils : NSObject
 
