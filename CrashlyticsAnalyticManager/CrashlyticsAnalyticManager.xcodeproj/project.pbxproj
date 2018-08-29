@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		322FB5B62136EED900749745 /* CrashlyticsAnalyticManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 322FB5B42136EED900749745 /* CrashlyticsAnalyticManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		322FB5BE2136EF3C00749745 /* CAMManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 322FB5BC2136EF3C00749745 /* CAMManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		322FB5BF2136EF3C00749745 /* CAMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322FB5BD2136EF3C00749745 /* CAMManager.m */; };
+		322FB5C22136EF4500749745 /* CAMConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 322FB5C02136EF4500749745 /* CAMConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		322FB5C32136EF4500749745 /* CAMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 322FB5C12136EF4500749745 /* CAMConstants.m */; };
+		322FB5C62136EF5200749745 /* CAMUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 322FB5C42136EF5200749745 /* CAMUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		322FB5C72136EF5200749745 /* CAMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 322FB5C52136EF5200749745 /* CAMUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		322FB5B12136EED900749745 /* CrashlyticsAnalyticManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CrashlyticsAnalyticManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		322FB5B42136EED900749745 /* CrashlyticsAnalyticManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashlyticsAnalyticManager.h; sourceTree = "<group>"; };
 		322FB5B52136EED900749745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		322FB5BC2136EF3C00749745 /* CAMManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAMManager.h; sourceTree = "<group>"; };
+		322FB5BD2136EF3C00749745 /* CAMManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAMManager.m; sourceTree = "<group>"; };
+		322FB5C02136EF4500749745 /* CAMConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAMConstants.h; sourceTree = "<group>"; };
+		322FB5C12136EF4500749745 /* CAMConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAMConstants.m; sourceTree = "<group>"; };
+		322FB5C42136EF5200749745 /* CAMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAMUtils.h; sourceTree = "<group>"; };
+		322FB5C52136EF5200749745 /* CAMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAMUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +58,12 @@
 		322FB5B32136EED900749745 /* CrashlyticsAnalyticManager */ = {
 			isa = PBXGroup;
 			children = (
+				322FB5BC2136EF3C00749745 /* CAMManager.h */,
+				322FB5BD2136EF3C00749745 /* CAMManager.m */,
+				322FB5C02136EF4500749745 /* CAMConstants.h */,
+				322FB5C12136EF4500749745 /* CAMConstants.m */,
+				322FB5C42136EF5200749745 /* CAMUtils.h */,
+				322FB5C52136EF5200749745 /* CAMUtils.m */,
 				322FB5B42136EED900749745 /* CrashlyticsAnalyticManager.h */,
 				322FB5B52136EED900749745 /* Info.plist */,
 			);
@@ -59,6 +77,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322FB5BE2136EF3C00749745 /* CAMManager.h in Headers */,
+				322FB5C22136EF4500749745 /* CAMConstants.h in Headers */,
+				322FB5C62136EF5200749745 /* CAMUtils.h in Headers */,
 				322FB5B62136EED900749745 /* CrashlyticsAnalyticManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322FB5C72136EF5200749745 /* CAMUtils.m in Sources */,
+				322FB5BF2136EF3C00749745 /* CAMManager.m in Sources */,
+				322FB5C32136EF4500749745 /* CAMConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
