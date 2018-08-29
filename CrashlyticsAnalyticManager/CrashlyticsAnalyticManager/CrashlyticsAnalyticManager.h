@@ -18,3 +18,4 @@ FOUNDATION_EXPORT const unsigned char CrashlyticsAnalyticManagerVersionString[];
 
 #import <CrashlyticsAnalyticManager/CAMManager.h>
 #import <CrashlyticsAnalyticManager/CAMConstants.h>
+#import <CrashlyticsAnalyticManager/CAMUtils.h>
