@@ -7,4 +7,6 @@ target 'CrashlyticsAnalyticManager' do
 
   # Pods for CrashlyticsAnalyticManager
 
+  pod 'Crashlytics'
+
 end

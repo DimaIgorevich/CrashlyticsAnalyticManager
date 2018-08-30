@@ -12,7 +12,7 @@
 
 @implementation CAMUtils
 
-+ (NSString *)authTypeToString:(CAWAuthType)type {
++ (NSString *)authTypeToString:(CAMAuthType)type {
     NSArray *arrayOfTypes = [[NSArray alloc] initWithObjects:kAuthTypes];
     return [arrayOfTypes objectAtIndex:type];
 }

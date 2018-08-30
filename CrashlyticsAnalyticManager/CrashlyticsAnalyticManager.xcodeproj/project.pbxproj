@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25A63436208E0172F48ECC1F /* libPods-CrashlyticsAnalyticManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59AEF2A0D2064ABC21976143 /* libPods-CrashlyticsAnalyticManager.a */; };
 		322FB5B62136EED900749745 /* CrashlyticsAnalyticManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 322FB5B42136EED900749745 /* CrashlyticsAnalyticManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		322FB5BE2136EF3C00749745 /* CAMManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 322FB5BC2136EF3C00749745 /* CAMManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		322FB5CB2136F62700749745 /* CAMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322FB5BD2136EF3C00749745 /* CAMManager.m */; };
@@ -15,6 +16,8 @@
 		322FB5D42136F8F500749745 /* CAMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 322FB5D02136F8F500749745 /* CAMConstants.m */; };
 		322FB5D52136F8F500749745 /* CAMUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 322FB5D12136F8F500749745 /* CAMUtils.h */; };
 		322FB5D62136F8F500749745 /* CAMConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 322FB5D22136F8F500749745 /* CAMConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		322FB60721381E8E00749745 /* CAMEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 322FB60521381E8E00749745 /* CAMEvent.h */; };
+		322FB60821381E8E00749745 /* CAMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 322FB60621381E8E00749745 /* CAMEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,11 @@
 		322FB5D02136F8F500749745 /* CAMConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAMConstants.m; sourceTree = "<group>"; };
 		322FB5D12136F8F500749745 /* CAMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMUtils.h; sourceTree = "<group>"; };
 		322FB5D22136F8F500749745 /* CAMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMConstants.h; sourceTree = "<group>"; };
+		322FB60521381E8E00749745 /* CAMEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAMEvent.h; sourceTree = "<group>"; };
+		322FB60621381E8E00749745 /* CAMEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAMEvent.m; sourceTree = "<group>"; };
+		59AEF2A0D2064ABC21976143 /* libPods-CrashlyticsAnalyticManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrashlyticsAnalyticManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE21A40F3026CFF2DB0389C /* Pods-CrashlyticsAnalyticManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashlyticsAnalyticManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrashlyticsAnalyticManager/Pods-CrashlyticsAnalyticManager.release.xcconfig"; sourceTree = "<group>"; };
+		9F551884649D2D5E3ED4C628 /* Pods-CrashlyticsAnalyticManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashlyticsAnalyticManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrashlyticsAnalyticManager/Pods-CrashlyticsAnalyticManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A63436208E0172F48ECC1F /* libPods-CrashlyticsAnalyticManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +54,8 @@
 			children = (
 				322FB5B32136EED900749745 /* CrashlyticsAnalyticManager */,
 				322FB5B22136EED900749745 /* Products */,
+				64AD92549944326B7058BD3F /* Pods */,
+				407BCE4ABEC517F6E4357794 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +70,8 @@
 		322FB5B32136EED900749745 /* CrashlyticsAnalyticManager */ = {
 			isa = PBXGroup;
 			children = (
+				322FB60521381E8E00749745 /* CAMEvent.h */,
+				322FB60621381E8E00749745 /* CAMEvent.m */,
 				322FB5D22136F8F500749745 /* CAMConstants.h */,
 				322FB5D02136F8F500749745 /* CAMConstants.m */,
 				322FB5D12136F8F500749745 /* CAMUtils.h */,
@@ -71,6 +84,23 @@
 			path = CrashlyticsAnalyticManager;
 			sourceTree = "<group>";
 		};
+		407BCE4ABEC517F6E4357794 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59AEF2A0D2064ABC21976143 /* libPods-CrashlyticsAnalyticManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64AD92549944326B7058BD3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F551884649D2D5E3ED4C628 /* Pods-CrashlyticsAnalyticManager.debug.xcconfig */,
+				8CE21A40F3026CFF2DB0389C /* Pods-CrashlyticsAnalyticManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -81,6 +111,7 @@
 				322FB5B62136EED900749745 /* CrashlyticsAnalyticManager.h in Headers */,
 				322FB5BE2136EF3C00749745 /* CAMManager.h in Headers */,
 				322FB5D62136F8F500749745 /* CAMConstants.h in Headers */,
+				322FB60721381E8E00749745 /* CAMEvent.h in Headers */,
 				322FB5D52136F8F500749745 /* CAMUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +123,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 322FB5B92136EED900749745 /* Build configuration list for PBXNativeTarget "CrashlyticsAnalyticManager" */;
 			buildPhases = (
+				F8EE6AC6A0760DCAB1AC0010 /* [CP] Check Pods Manifest.lock */,
 				322FB5AC2136EED900749745 /* Sources */,
 				322FB5AD2136EED900749745 /* Frameworks */,
 				322FB5AE2136EED900749745 /* Headers */,
@@ -148,11 +180,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F8EE6AC6A0760DCAB1AC0010 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrashlyticsAnalyticManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		322FB5AC2136EED900749745 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322FB60821381E8E00749745 /* CAMEvent.m in Sources */,
 				322FB5CB2136F62700749745 /* CAMManager.m in Sources */,
 				322FB5D32136F8F500749745 /* CAMUtils.m in Sources */,
 				322FB5D42136F8F500749745 /* CAMConstants.m in Sources */,
@@ -280,6 +334,7 @@
 		};
 		322FB5BA2136EED900749745 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F551884649D2D5E3ED4C628 /* Pods-CrashlyticsAnalyticManager.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +360,7 @@
 		};
 		322FB5BB2136EED900749745 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CE21A40F3026CFF2DB0389C /* Pods-CrashlyticsAnalyticManager.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

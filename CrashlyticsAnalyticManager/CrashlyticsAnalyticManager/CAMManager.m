@@ -7,40 +7,32 @@
 //
 
 #import "CAMManager.h"
+#import "CAMUtils.h"
+
+@import Crashlytics;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @implementation CAMManager
 
-+ (nonnull instancetype)sharedManager {
-    static CAMManager *_instance = nil;
-    
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _instance = [[self alloc] init];
-    });
-    
-    return _instance;
++ (void)log:(NSString *)event attributes:(nullable NSDictionary *)customAttributesOrNil {
+    [Answers logCustomEventWithName:event customAttributes:customAttributesOrNil];
 }
 
-- (id)init {
-    if (self = [super init]) {
-        
-    }
-    return self;
++ (void)signUpEventWith:(CAMAuthType)authType
+             attributes:(nullable NSDictionary *)customAttributesOrNil
+        handleOperation:(CAMHandlerOperationType)operation {
+    [Answers logSignUpWithMethod:[CAMUtils authTypeToString:authType]
+                         success:@(operation == CAMHandlerOperationTypeSuccess)
+                customAttributes:customAttributesOrNil];
 }
 
-- (void)log:(NSString *)event
- attributes:(nullable NSDictionary *)customAttributesOrNil {
-    
-}
-
-- (void)signUpEventWith {
-    
-}
-
-- (void)signInEventWith {
-    
++ (void)signInEventWith:(CAMAuthType)authType
+             attributes:(nullable NSDictionary *)customAttributesOrNil
+        handleOperation:(CAMHandlerOperationType)operation {
+    [Answers logLoginWithMethod:[CAMUtils authTypeToString:authType]
+                        success:@(operation == CAMHandlerOperationTypeSuccess)
+               customAttributes:customAttributesOrNil];
 }
 
 @end

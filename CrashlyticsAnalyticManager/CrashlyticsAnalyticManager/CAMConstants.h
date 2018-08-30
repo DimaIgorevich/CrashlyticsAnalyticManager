@@ -10,18 +10,18 @@
 
 #pragma mark - Sign In / Sign Up Events
 
-typedef NS_ENUM(NSInteger, CAWAuthType) {
-    CAWAuthTypeEmail,
-    CAWAuthTypePhoneNumber,
-    CAWAuthTypeGoogle,
-    CAWAuthTypeFacebook,
-    CAWAuthTypeTwitter,
-    CAWAuthTypeGitHub,
-    CAWAuthTypeAnonymous
+typedef NS_ENUM(NSInteger, CAMAuthType) {
+    CAMAuthTypeEmail,
+    CAMAuthTypePhoneNumber,
+    CAMAuthTypeGoogle,
+    CAMAuthTypeFacebook,
+    CAMAuthTypeTwitter,
+    CAMAuthTypeGitHub,
+    CAMAuthTypeAnonymous
 };
 
-typedef NS_ENUM(NSInteger, CAWHandlerOperationType) {
-    CAWHandlerOperationTypeFailed, // = 0
-    CAWHandlerOperationTypeSuccess
+typedef NS_ENUM(NSInteger, CAMHandlerOperationType) {
+    CAMHandlerOperationTypeFailed, // = 0
+    CAMHandlerOperationTypeSuccess
 };
 

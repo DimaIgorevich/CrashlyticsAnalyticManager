@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "CAMConstants.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,13 +15,15 @@ NS_SWIFT_NAME(AnalyticManager)
 
 @interface CAMManager : NSObject
 
-+ (nonnull instancetype)sharedManager;
++ (void)log:(NSString *)event attributes:(nullable NSDictionary *)customAttributesOrNil;
 
-- (void)log:(NSString *)event attributes:(nullable NSDictionary *)customAttributesOrNil;
++ (void)signUpEventWith:(CAMAuthType)authType
+             attributes:(nullable NSDictionary *)customAttributesOrNil
+        handleOperation:(CAMHandlerOperationType)operation;
 
-- (void)signUpEventWith;
-
-- (void)signInEventWith;
++ (void)signInEventWith:(CAMAuthType)authType
+             attributes:(nullable NSDictionary *)customAttributesOrNil
+        handleOperation:(CAMHandlerOperationType)operation;
 
 @end
 

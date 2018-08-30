@@ -11,7 +11,7 @@
 
 @interface CAMUtils : NSObject
 
-+ (NSString *)authTypeToString:(CAWAuthType)type;
++ (NSString *)authTypeToString:(CAMAuthType)type;
 
 
 @end
